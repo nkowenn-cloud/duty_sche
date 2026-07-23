@@ -1,0 +1,607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="th"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;ตารางเวรอาจารย์ สิงหาคม 2026&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg: #f5f7fa;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--card-bg: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text: #1a1a2e;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text-secondary: #6b7280;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent: #2563eb;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent-light: #dbeafe;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--border: #e5e7eb;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--hover: #f3f4f6;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--danger: #ef4444;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--radius-sm: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>* { box-sizing: border-box; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Sarabun', system-ui, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--bg);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.app-container {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 1200px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.header {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.header h1 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 0 4px 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 22px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.header p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-secondary);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tabs {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tab-btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--card-bg);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-secondary);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: inherit;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tab-btn.active {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 2px 8px rgba(37,99,235,0.3);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tab-btn:hover:not(.active) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--hover);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.panel {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.panel.active {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>animation: fadeIn 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes fadeIn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>from { opacity: 0; transform: translateY(8px); }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>to { opacity: 1; transform: translateY(0); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Search */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.search-box {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 400px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto 16px auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.search-box input {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 12px 16px 12px 44px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: inherit;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--card-bg);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>outline: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: border-color 0.2s, box-shadow 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.search-box input:focus {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 0 0 3px var(--accent-light);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.search-icon {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>left: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: translateY(-50%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-secondary);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Name List */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.name-grid {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.name-chip {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--card-bg);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius-sm);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>user-select: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.name-chip:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--accent-light);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.name-chip.selected {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 2px 8px rgba(37,99,235,0.3);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Result Table */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.result-card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--card-bg);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: var(--shadow);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.result-card h3 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 0 12px 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.result-table {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-collapse: collapse;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.result-table th {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--accent-light);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: left;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: sticky;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.result-table td {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.result-table tr:hover td {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--hover);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.day-badge {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: inline-flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 32px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 32px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.duty-tag {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 2px 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 1px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>white-space: nowrap;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-siriraj { background: #fee2e2; color: #991b1b; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-siph<span class="Apple-converted-space">    </span>{ background: #dbeafe; color: #1e40af; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-siph-n<span class="Apple-converted-space">  </span>{ background: #1e3a5f; color: #fff; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-scope <span class="Apple-converted-space">  </span>{ background: #dcfce7; color: #166534; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-gen <span class="Apple-converted-space">    </span>{ background: #fef3c7; color: #92400e; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-ort <span class="Apple-converted-space">    </span>{ background: #e0e7ff; color: #3730a3; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-float <span class="Apple-converted-space">  </span>{ background: #f3e8ff; color: #6b21a8; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-ent <span class="Apple-converted-space">    </span>{ background: #ccfbf1; color: #0f766e; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-gyn <span class="Apple-converted-space">    </span>{ background: #fce7f3; color: #9d174d; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-thrc<span class="Apple-converted-space">    </span>{ background: #ffedd5; color: #9a3412; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-neuro <span class="Apple-converted-space">  </span>{ background: #f1f5f9; color: #334155; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-cont3 <span class="Apple-converted-space">  </span>{ background: #f0fdf4; color: #15803d; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-contg <span class="Apple-converted-space">  </span>{ background: #fdf2f8; color: #be185d; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Calendar */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cal-grid {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: repeat(7, 1fr);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 6px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cal-day-header {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-secondary);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 8px 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cal-day {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--card-bg);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius-sm);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: 100px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cal-day:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 2px 8px rgba(37,99,235,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cal-day .dnum {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cal-day .duties {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cal-day .duties .mini-tag {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 9px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 1px 4px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>white-space: nowrap;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-overflow: ellipsis;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cal-day.empty {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: default;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Modal */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal-overlay {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>inset: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(0,0,0,0.4);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 1000;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal-overlay.show {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>animation: fadeIn 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal-card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--card-bg);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: var(--shadow);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 600px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-height: 80vh;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow-y: auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal-close {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>right: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-secondary);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal-close:hover { color: var(--danger); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal-title {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 0 16px 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.duty-list {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.duty-row {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--hover);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius-sm);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.duty-row .dname {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.empty-state {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-secondary);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 640px) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.name-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.cal-grid { gap: 3px; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.cal-day { min-height: 70px; padding: 4px; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.cal-day .dnum { font-size: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.result-table { font-size: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.result-table th, .result-table td { padding: 6px 4px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="app-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1&gt;ตารางเวรอาจารย์ สิงหาคม 2026&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;เลือกชื่ออาจารย์เพื่อดูเวร หรือเลือกวันเพื่อดูรายชื่อเวร&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tabs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="tab-btn active" onclick="switchTab('byName')"&gt;🔍 ค้นหาตามชื่อ&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="tab-btn" onclick="switchTab('byDate')"&gt;📅 ดูปฏิทิน&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Panel: By Name --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="byName" class="panel active"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="search-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="search-icon"&gt;🔍&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="text" id="nameSearch" placeholder="พิมพ์ชื่ออาจารย์..." oninput="filterNames()"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="name-grid" id="nameGrid"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="nameResult"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Panel: By Date --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="byDate" class="panel"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="cal-grid" id="calGrid"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Modal --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="modal-overlay" id="dayModal" onclick="closeModal(event)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="modal-card" onclick="event.stopPropagation()"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="modal-close" onclick="closeModal()"&gt;&amp;times;&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="modal-title" id="modalTitle"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="duty-list" id="modalContent"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// ===== DATA =====</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const duties = [</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'siriraj', <span class="Apple-converted-space">  </span>label:'siriraj', <span class="Apple-converted-space">      </span>cls:'tag-siriraj' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'cont3', <span class="Apple-converted-space">    </span>label:'ต่อเนื่อง3', <span class="Apple-converted-space">    </span>cls:'tag-cont3' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'contg', <span class="Apple-converted-space">    </span>label:'ต่อเนื่องสูติ', <span class="Apple-converted-space">  </span>cls:'tag-contg' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'siph1', <span class="Apple-converted-space">    </span>label:'SiPH-1',<span class="Apple-converted-space">        </span>cls:'tag-siph' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'siph2', <span class="Apple-converted-space">    </span>label:'SiPH-2',<span class="Apple-converted-space">        </span>cls:'tag-siph' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'siph3', <span class="Apple-converted-space">    </span>label:'SiPH-3',<span class="Apple-converted-space">        </span>cls:'tag-siph' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'siphn1',<span class="Apple-converted-space">    </span>label:'SiPHnight-1', <span class="Apple-converted-space">  </span>cls:'tag-siph-n' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'siphn2',<span class="Apple-converted-space">    </span>label:'SiPHnight-2', <span class="Apple-converted-space">  </span>cls:'tag-siph-n' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'scope1',<span class="Apple-converted-space">    </span>label:'Scope-1', <span class="Apple-converted-space">      </span>cls:'tag-scope' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'scope2',<span class="Apple-converted-space">    </span>label:'Scope-2', <span class="Apple-converted-space">      </span>cls:'tag-scope' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'scope3',<span class="Apple-converted-space">    </span>label:'Scope-3', <span class="Apple-converted-space">      </span>cls:'tag-scope' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'gen1',<span class="Apple-converted-space">      </span>label:'Gen-1', <span class="Apple-converted-space">        </span>cls:'tag-gen' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'gen2',<span class="Apple-converted-space">      </span>label:'Gen-2', <span class="Apple-converted-space">        </span>cls:'tag-gen' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'gen3',<span class="Apple-converted-space">      </span>label:'Gen-3', <span class="Apple-converted-space">        </span>cls:'tag-gen' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'gen4',<span class="Apple-converted-space">      </span>label:'Gen-4', <span class="Apple-converted-space">        </span>cls:'tag-gen' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'ort1',<span class="Apple-converted-space">      </span>label:'Ort-1', <span class="Apple-converted-space">        </span>cls:'tag-ort' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'ort2',<span class="Apple-converted-space">      </span>label:'Ort-2', <span class="Apple-converted-space">        </span>cls:'tag-ort' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'float1',<span class="Apple-converted-space">    </span>label:'Float-1', <span class="Apple-converted-space">      </span>cls:'tag-float' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'float2',<span class="Apple-converted-space">    </span>label:'Float-2', <span class="Apple-converted-space">      </span>cls:'tag-float' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'ent1',<span class="Apple-converted-space">      </span>label:'Ent-1', <span class="Apple-converted-space">        </span>cls:'tag-ent' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'gyn1',<span class="Apple-converted-space">      </span>label:'Gyn-1', <span class="Apple-converted-space">        </span>cls:'tag-gyn' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'thrc1', <span class="Apple-converted-space">    </span>label:'Thrc-1',<span class="Apple-converted-space">        </span>cls:'tag-thrc' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ key:'neuro1',<span class="Apple-converted-space">    </span>label:'Neuro-1', <span class="Apple-converted-space">      </span>cls:'tag-neuro' },</p>
+<p class="p1"><span class="Apple-converted-space">    </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const schedule = [</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:1,<span class="Apple-converted-space">  </span>siriraj:'ธนัสถ์', cont3:'.', contg:'.', siph1:'ธีรดา', siph2:'สวิตา', siph3:'.', siphn1:'.', siphn2:'.', scope1:'ฐิติกัญญา', scope2:'นวลแพร', scope3:'.', gen1:'กษณา', gen2:'ขัตติยา', gen3:'.', gen4:'.', ort1:'สุรภา', ort2:'.', float1:'.', float2:'.', ent1:'สุกัญญาด', gyn1:'ณภัทร', thrc1:'.', neuro1:'ภาวิต' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:2,<span class="Apple-converted-space">  </span>siriraj:'วัศยาภรณ์', cont3:'.', contg:'.', siph1:'ยศ', siph2:'สุวิทย์', siph3:'.', siphn1:'.', siphn2:'.', scope1:'อภิสรา', scope2:'.', scope3:'ขัตติยา', gen1:'ภาวิณี', gen2:'.', gen3:'.', gen4:'.', ort1:'.', ort2:'.', float1:'.', float2:'.', ent1:'.', gyn1:'.', thrc1:'.', neuro1:'.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:3,<span class="Apple-converted-space">  </span>siriraj:'พสิษฐ์', cont3:'อลิฟ', contg:'วรรธนันทน์', siph1:'ประเสริฐ', siph2:'บุศรา', siph3:'สุกัญญาด', siphn1:'ภาวิต', siphn2:'ณัฐชัย', scope1:'นฤนาท', scope2:'ณิชกานต์', scope3:'.', gen1:'เสาวภาคย์ล', gen2:'ธีรดา', gen3:'พิชยา', gen4:'ภานพ', ort1:'ธนัสถ์', ort2:'ณัฐธยาน์', float1:'ฐิติกัญญา', float2:'สวิตา', ent1:'สมิตา', gyn1:'เสาวภาคย์จ', thrc1:'วิริยา', neuro1:'สิริมา' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:4,<span class="Apple-converted-space">  </span>siriraj:'อภิสรา', cont3:'นวลแพร', contg:'นันตสรณ์', siph1:'มิ่งขวัญ', siph2:'สุกัญญาด', siph3:'ปาริฉัตต์', siphn1:'สารเศรษฐ์', siphn2:'นภสร', scope1:'ยศ', scope2:'เพ็ญศิริ', scope3:'.', gen1:'สุรัสวดี', gen2:'ณภัทร', gen3:'ธีรดา', gen4:'ณัฐชัย', ort1:'ภาวิณี', ort2:'วรรธนันทน์', float1:'ภาวิต', float2:'ทัศยุ', ent1:'สหัสา', gyn1:'สิริมา', thrc1:'ภานพ', neuro1:'ปราณี' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:5,<span class="Apple-converted-space">  </span>siriraj:'ณภัทร', cont3:'ศุภชัย', contg:'ณิชกานต์', siph1:'อรรณพ', siph2:'ยศ', siph3:'ศิริรัตน์', siphn1:'ธนิทธิ', siphn2:'สุกัญญาด', scope1:'อลิฟ', scope2:'สมชาย', scope3:'.', gen1:'.', gen2:'.', gen3:'.', gen4:'.', ort1:'สิริมา', ort2:'นฤนาท', float1:'วาริท', float2:'พีรฉัตร', ent1:'.', gyn1:'สุรภา', thrc1:'.', neuro1:'พิชยา' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:6,<span class="Apple-converted-space">  </span>siriraj:'อภิสรา', cont3:'สุกัญญาจ', contg:'พสิษฐ์', siph1:'นฤนาท', siph2:'มิ่งขวัญ', siph3:'ภาวิต', siphn1:'ณิชกานต์', siphn2:'วัศยาภรณ์', scope1:'ธนวุฒิ', scope2:'สุรภา', scope3:'.', gen1:'ภูมิ์', gen2:'เสาวภาคย์จ', gen3:'ขัตติยา', gen4:'สารเศรษฐ์', ort1:'เสาวภาคย์ล', ort2:'พรประสิทธิ์', float1:'ธีรดา', float2:'นภสร', ent1:'ธนัสถ์', gyn1:'รัตนาภรณ์', thrc1:'อรรณพ', neuro1:'ณัฐชัย' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:7,<span class="Apple-converted-space">  </span>siriraj:'นภสร', cont3:'วาริท', contg:'ณัฐชัย', siph1:'นันตสรณ์', siph2:'ฐานิกา', siph3:'สารเศรษฐ์', siphn1:'สิริมา', siphn2:'อลิฟ', scope1:'ภาวิต', scope2:'ภานพ', scope3:'.', gen1:'.', gen2:'.', gen3:'.', gen4:'.', ort1:'ธนวุฒิ', ort2:'รัตนาภรณ์', float1:'สุรัสวดี', float2:'ณิชกานต์', ent1:'.', gyn1:'พัชรียา', thrc1:'.', neuro1:'ธนิทธิ' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:8,<span class="Apple-converted-space">  </span>siriraj:'พสิษฐ์', cont3:'.', contg:'.', siph1:'วาริท', siph2:'สุชานันท์', siph3:'.', siphn1:'.', siphn2:'.', scope1:'รัตนาภรณ์', scope2:'สวิตา', scope3:'.', gen1:'พรประสิทธิ์', gen2:'อภิสรา', gen3:'.', gen4:'.', ort1:'สมิตา', ort2:'.', float1:'.', float2:'.', ent1:'ณัฐธยาน์', gyn1:'สุรภา', thrc1:'.', neuro1:'.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:9,<span class="Apple-converted-space">  </span>siriraj:'สุรภา', cont3:'.', contg:'.', siph1:'พีรฉัตร', siph2:'วัศยาภรณ์', siph3:'.', siphn1:'.', siphn2:'.', scope1:'นฤนาท', scope2:'.', scope3:'ศุภชัย', gen1:'ณัฐธยาน์', gen2:'.', gen3:'.', gen4:'.', ort1:'.', ort2:'.', float1:'.', float2:'.', ent1:'.', gyn1:'.', thrc1:'.', neuro1:'.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:10, siriraj:'ณิชกานต์', cont3:'สุวิมล', contg:'สุกัญญาด', siph1:'ธัชวรรณ', siph2:'ปราณี', siph3:'ศุภชัย', siphn1:'วัศยาภรณ์', siphn2:'ภาวิต', scope1:'ณัฐปภัสร์', scope2:'ปฐม', scope3:'.', gen1:'สุชานันท์', gen2:'ธนิทธิ', gen3:'ณัฐชัย', gen4:'สหัสา', ort1:'ชยาภา', ort2:'นวลแพร', float1:'สารเศรษฐ์', float2:'ขัตติยา', ent1:'ธีรดา', gyn1:'สมิตา', thrc1:'ศรัญญา', neuro1:'อรอินทุ์' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:11, siriraj:'อภิสรา', cont3:'ปราณี', contg:'มิ่งขวัญ', siph1:'จิตสุภา', siph2:'ภาวิต', siph3:'อรรณพ', siphn1:'พีรฉัตร', siphn2:'เพ็ญศิริ', scope1:'สมิตา', scope2:'ทัศยุ', scope3:'.', gen1:'สุรภา', gen2:'มานี', gen3:'นฤนาท', gen4:'ภูมิ์', ort1:'สหัสา', ort2:'ณัฐปภัสร์', float1:'สิริมา', float2:'สารเศรษฐ์', ent1:'เสาวภาคย์จ', gyn1:'สุรัสวดี', thrc1:'รัตนาภรณ์', neuro1:'ขัตติยา' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:12, siriraj:'สุชานันท์', cont3:'.', contg:'.', siph1:'มานี', siph2:'พีรฉัตร', siph3:'.', siphn1:'.', siphn2:'.', scope1:'.', scope2:'.', scope3:'.', gen1:'.', gen2:'.', gen3:'.', gen4:'.', ort1:'.', ort2:'.', float1:'.', float2:'.', ent1:'.', gyn1:'.', thrc1:'.', neuro1:'.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:13, siriraj:'ณัฐปภัสร์', cont3:'ปราโมทย์', contg:'ภูมิ์', siph1:'ฐิติกัญญา', siph2:'นฤนาท', siph3:'พีรฉัตร', siphn1:'สุรภา', siphn2:'วาริท', scope1:'ภานพ', scope2:'ภาวิณี', scope3:'.', gen1:'สุกัญญาด', gen2:'ภาวิต', gen3:'สมิตา', gen4:'กำแหง', ort1:'นภสร', ort2:'ธนิทธิ', float1:'สหัสา', float2:'เสาวภาคย์จ', ent1:'ณิชกานต์', gyn1:'ธีรดา', thrc1:'ณัฐธยาน์', neuro1:'มานี' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:14, siriraj:'วาริท', cont3:'น้ำทิพย์', contg:'เพ็ญศิริ', siph1:'นวลแพร', siph2:'ปฐม', siph3:'มิ่งขวัญ', siphn1:'ณัฐธยาน์', siphn2:'อรอินทุ์', scope1:'นภสร', scope2:'สารเศรษฐ์', scope3:'.', gen1:'.', gen2:'.', gen3:'.', gen4:'.', ort1:'ณภัทร', ort2:'ธีรดา', float1:'ภาวิณี', float2:'สุรัสวดี', ent1:'.', gyn1:'ภาวิต', thrc1:'.', neuro1:'ขัตติยา' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:15, siriraj:'พรประสิทธิ์', cont3:'.', contg:'.', siph1:'สมิตา', siph2:'นฤนาท', siph3:'.', siphn1:'.', siphn2:'.', scope1:'ณภัทร', scope2:'ธนวุฒิ', scope3:'.', gen1:'รัตนาภรณ์', gen2:'ณิชกานต์', gen3:'.', gen4:'.', ort1:'อลิฟ', ort2:'.', float1:'.', float2:'.', ent1:'ภาวิต', gyn1:'ขัตติยา', thrc1:'.', neuro1:'ฐิติกัญญา' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:16, siriraj:'ณภัทร', cont3:'.', contg:'.', siph1:'นฤนาท', siph2:'เสาวภาคย์จ', siph3:'.', siphn1:'.', siphn2:'.', scope1:'ณิชกานต์', scope2:'.', scope3:'สมิตา', gen1:'สารเศรษฐ์', gen2:'.', gen3:'.', gen4:'.', ort1:'.', ort2:'.', float1:'.', float2:'.', ent1:'.', gyn1:'.', thrc1:'.', neuro1:'.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:17, siriraj:'สุชานันท์', cont3:'ภาวิต', contg:'สมิตา', siph1:'ณัฐธยาน์', siph2:'ปาริฉัตต์', siph3:'สหัสา', siphn1:'นภสร', siphn2:'สารเศรษฐ์', scope1:'ธนิทธิ', scope2:'ฐิติกัญญา', scope3:'.', gen1:'อลิฟ', gen2:'ชยาภา', gen3:'ธนัสถ์', gen4:'ธีรดา', ort1:'ณัฐปภัสร์', ort2:'สุกัญญาด', float1:'ณิชกานต์', float2:'ศรัญญา', ent1:'นวลแพร', gyn1:'พีรฉัตร', thrc1:'สิริมา', neuro1:'ทัศยุ' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:18, siriraj:'วาริท', cont3:'พสิษฐ์', contg:'สิริมา', siph1:'ยศ', siph2:'ประเสริฐ', siph3:'วิริยา', siphn1:'เพ็ญศิริ', siphn2:'อรรณพ', scope1:'สารเศรษฐ์', scope2:'อรุโณทัย', scope3:'.', gen1:'ณภัทร', gen2:'รัตนาภรณ์', gen3:'มานี', gen4:'ธนิทธิ', ort1:'ธีรดา', ort2:'ศุภชัย', float1:'ขัตติยา', float2:'ฐิติกัญญา', ent1:'สุรภา', gyn1:'ภาวิณี', thrc1:'อลิฟ', neuro1:'ณัฐปภัสร์' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:19, siriraj:'นภสร', cont3:'สุวิทย์', contg:'ภูริพงศ์', siph1:'สุกัญญาจ', siph2:'ยศ', siph3:'สมชาย', siphn1:'ธีรดา', siphn2:'สุชานันท์', scope1:'สิริมา', scope2:'สหัสา', scope3:'.', gen1:'.', gen2:'.', gen3:'.', gen4:'.', ort1:'สุรภา', ort2:'มานี', float1:'ธนิทธิ', float2:'อภิสรา', ent1:'.', gyn1:'อรอินทุ์', thrc1:'.', neuro1:'ฐิติกัญญา' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:20, siriraj:'สุชานันท์', cont3:'อรุโณทัย', contg:'ทัศยุ', siph1:'สุรัสวดี', siph2:'กษณา', siph3:'สุกัญญาจ', siphn1:'วาริท', siphn2:'ณัฐปภัสร์', scope1:'เพ็ญศิริ', scope2:'พีรฉัตร', scope3:'.', gen1:'ฐิติกัญญา', gen2:'พิชยา', gen3:'อรรณพ', gen4:'สมิตา', ort1:'สุกัญญาด', ort2:'ปฐม', float1:'ณัฐชัย', float2:'ภานพ', ent1:'ธนวุฒิ', gyn1:'ณภัทร', thrc1:'สุรภา', neuro1:'ธนัสถ์' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:21, siriraj:'ธนัสถ์', cont3:'ธีรดา', contg:'อรรณพ', siph1:'ณัฐชัย', siph2:'มานี', siph3:'ปราโมทย์', siphn1:'อลิฟ', siphn2:'สุวิทย์', scope1:'สมชาย', scope2:'นภสร', scope3:'.', gen1:'.', gen2:'.', gen3:'.', gen4:'.', ort1:'วิริยา', ort2:'ชยาภา', float1:'ธนวุฒิ', float2:'ณภัทร', ent1:'.', gyn1:'ณิชกานต์', thrc1:'.', neuro1:'ภาวิณี' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:22, siriraj:'ธีรดา', cont3:'.', contg:'.', siph1:'วสุ', siph2:'ณัฐชัย', siph3:'.', siphn1:'.', siphn2:'.', scope1:'ยศ', scope2:'สิริมา', scope3:'.', gen1:'ธนวุฒิ', gen2:'สุรภา', gen3:'.', gen4:'.', ort1:'มานี', ort2:'.', float1:'.', float2:'.', ent1:'อภิสรา', gyn1:'สมิตา', thrc1:'.', neuro1:'.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:23, siriraj:'อภิสรา', cont3:'.', contg:'.', siph1:'สุวิทย์', siph2:'นภสร', siph3:'.', siphn1:'.', siphn2:'.', scope1:'สุรภา', scope2:'.', scope3:'ณัฐชัย', gen1:'สมิตา', gen2:'.', gen3:'.', gen4:'.', ort1:'.', ort2:'.', float1:'.', float2:'.', ent1:'.', gyn1:'.', thrc1:'.', neuro1:'.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:24, siriraj:'ณภัทร', cont3:'ธนิทธิ', contg:'ธัชวรรณ', siph1:'กษณา', siph2:'สิริมา', siph3:'ยศ', siphn1:'ศุภชัย', siphn2:'สมิตา', scope1:'ปราโมทย์', scope2:'ภาวิต', scope3:'.', gen1:'ธีรดา', gen2:'นวลแพร', gen3:'ฐิติกัญญา', gen4:'เสาวภาคย์ล', ort1:'สุชานันท์', ort2:'ทัศยุ', float1:'อลิฟ', float2:'จิตสุภา', ent1:'วาริท', gyn1:'ณัฐปภัสร์', thrc1:'สวิตา', neuro1:'ปราณี' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:25, siriraj:'พสิษฐ์', cont3:'พัชรียา', contg:'ปาริฉัตต์', siph1:'สุวิมล', siph2:'ธัชวรรณ', siph3:'อภิชาต', siphn1:'อรอินทุ์', siphn2:'พรประสิทธิ์', scope1:'ทัศยุ', scope2:'วิริยา', scope3:'.', gen1:'สุวิทย์', gen2:'สิริมา', gen3:'จิตสุภา', gen4:'มานี', ort1:'ภาวิต', ort2:'เสาวภาคย์จ', float1:'ณัฐปภัสร์', float2:'สุรภา', ent1:'อลิฟ', gyn1:'ณัฐชัย', thrc1:'กำแหง', neuro1:'สมิตา' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:26, siriraj:'สุรภา', cont3:'พีรฉัตร', contg:'บุศรา', siph1:'เชาวนันท์', siph2:'ฐิติกัญญา', siph3:'สุวิมล', siphn1:'สุวิทย์', siphn2:'ธนิทธิ', scope1:'จิตสุภา', scope2:'สุกัญญาจ', scope3:'.', gen1:'.', gen2:'.', gen3:'.', gen4:'.', ort1:'ณิชกานต์', ort2:'พิชยา', float1:'ธัชวรรณ', float2:'สุชานันท์', ent1:'.', gyn1:'กษณา', thrc1:'.', neuro1:'อลิฟ' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:27, siriraj:'ณิชกานต์', cont3:'รัตนาภรณ์', contg:'สุรัสวดี', siph1:'ชยาภา', siph2:'สุกัญญาจ', siph3:'เชาวนันท์', siphn1:'พรประสิทธิ์', siphn2:'พีรฉัตร', scope1:'อรอินทุ์', scope2:'อลิฟ', scope3:'.', gen1:'ขัตติยา', gen2:'ฐิติกัญญา', gen3:'ธนวุฒิ', gen4:'ธนัสถ์', ort1:'ธนิทธิ', ort2:'ณัฐชัย', float1:'จิตสุภา', float2:'ธีรดา', ent1:'ศรัญญา', gyn1:'อรุโณทัย', thrc1:'นวลแพร', neuro1:'ภาวิต' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:28, siriraj:'สุรภา', cont3:'จิตสุภา', contg:'ธนวุฒิ', siph1:'อลิฟ', siph2:'เชาวนันท์', siph3:'รัตนาภรณ์', siphn1:'ณัฐชัย', siphn2:'ธีรดา', scope1:'ขัตติยา', scope2:'ณัฐปภัสร์', scope3:'.', gen1:'.', gen2:'.', gen3:'.', gen4:'.', ort1:'ฐิติกัญญา', ort2:'สุวิทย์', float1:'สมิตา', float2:'นวลแพร', ent1:'.', gyn1:'สุกัญญาด', thrc1:'.', neuro1:'วาริท' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:29, siriraj:'นภสร', cont3:'.', contg:'.', siph1:'สวิตา', siph2:'จิตสุภา', siph3:'.', siphn1:'.', siphn2:'.', scope1:'ปฐม', scope2:'ณัฐธยาน์', scope3:'.', gen1:'มานี', gen2:'อลิฟ', gen3:'.', gen4:'.', ort1:'พรประสิทธิ์', ort2:'.', float1:'.', float2:'.', ent1:'ณัฐปภัสร์', gyn1:'นวลแพร', thrc1:'.', neuro1:'.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:30, siriraj:'ณัฐปภัสร์', cont3:'.', contg:'.', siph1:'ธนัสถ์', siph2:'ชยาภา', siph3:'.', siphn1:'.', siphn2:'.', scope1:'มานี', scope2:'.', scope3:'อรอินทุ์', gen1:'นวลแพร', gen2:'.', gen3:'.', gen4:'.', ort1:'.', ort2:'.', float1:'.', float2:'.', ent1:'.', gyn1:'.', thrc1:'.', neuro1:'.' },</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{ day:31, siriraj:'นภสร', cont3:'สารเศรษฐ์', contg:'ชยาภา', siph1:'อภิชาต', siph2:'สวิตา', siph3:'กษณา', siphn1:'สมิตา', siphn2:'ฐิติกัญญา', scope1:'นวลแพร', scope2:'ขัตติยา', scope3:'.', gen1:'ณิชกานต์', gen2:'สุชานันท์', gen3:'ภาวิต', gen4:'เสาวภาคย์จ', ort1:'ณัฐชัย', ort2:'วิริยา', float1:'ณัฐธยาน์', float2:'ธัชวรรณ', ent1:'ณภัทร', gyn1:'ภูมิ์', thrc1:'เสาวภาคย์ล', neuro1:'เพ็ญศิริ' },</p>
+<p class="p1"><span class="Apple-converted-space">    </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Collect all unique names</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const allNames = new Set();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>schedule.forEach(row =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>duties.forEach(d =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const v = row[d.key];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (v &amp;&amp; v !== '.') allNames.add(v);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const sortedNames = Array.from(allNames).sort((a,b) =&gt; a.localeCompare(b, 'th'));</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// ===== RENDER NAME GRID =====</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const nameGrid = document.getElementById('nameGrid');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>sortedNames.forEach(name =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const chip = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>chip.className = 'name-chip';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>chip.textContent = name;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>chip.onclick = () =&gt; selectName(name, chip);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>nameGrid.appendChild(chip);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// ===== FUNCTIONS =====</p>
+<p class="p1"><span class="Apple-converted-space">    </span>function switchTab(tab) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.querySelectorAll('.tab-btn').forEach(b =&gt; b.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.querySelectorAll('.panel').forEach(p =&gt; p.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>event.target.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById(tab).classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function filterNames() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const q = document.getElementById('nameSearch').value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.querySelectorAll('.name-chip').forEach(chip =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>chip.style.display = chip.textContent.includes(q) ? '' : 'none';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function selectName(name, chipEl) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.querySelectorAll('.name-chip').forEach(c =&gt; c.classList.remove('selected'));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>chipEl.classList.add('selected');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const rows = [];</p>
+<p class="p1"><span class="Apple-converted-space">      </span>schedule.forEach(row =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const matched = duties.filter(d =&gt; row[d.key] === name);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (matched.length &gt; 0) {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>rows.push({ day: row.day, duties: matched });</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const resultDiv = document.getElementById('nameResult');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (rows.length === 0) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>resultDiv.innerHTML = '&lt;div class="empty-state"&gt;ไม่พบเวรสำหรับ ' + name + '&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>let html = '&lt;div class="result-card"&gt;&lt;h3&gt;เวรของ ' + name + ' (สิงหาคม 2026)&lt;/h3&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>html += '&lt;table class="result-table"&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;วันที่&lt;/th&gt;&lt;th&gt;เวร&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>rows.forEach(r =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>html += '&lt;tr&gt;&lt;td&gt;&lt;span class="day-badge"&gt;' + r.day + '&lt;/span&gt;&lt;/td&gt;&lt;td&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>r.duties.forEach(d =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>html += '&lt;span class="duty-tag ' + d.cls + '"&gt;' + d.label + '&lt;/span&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>html += '&lt;/td&gt;&lt;/tr&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">      </span>html += '&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>resultDiv.innerHTML = html;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// ===== CALENDAR =====</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const dayHeaders = ['อา','จ','อ','พ','พฤ','ศ','ส'];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const firstDayOfWeek = 6; // Aug 1, 2026 = Saturday (0=Sun)</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function renderCalendar() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const grid = document.getElementById('calGrid');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>dayHeaders.forEach(d =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const h = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h.className = 'cal-day-header';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h.textContent = d;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>grid.appendChild(h);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Empty cells before day 1</p>
+<p class="p1"><span class="Apple-converted-space">      </span>for (let i = 0; i &lt; firstDayOfWeek; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const empty = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>empty.className = 'cal-day empty';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>grid.appendChild(empty);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>schedule.forEach(row =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const cell = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>cell.className = 'cal-day';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>cell.onclick = () =&gt; openDayModal(row.day);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>let dutiesHtml = '&lt;div class="dnum"&gt;' + row.day + '&lt;/div&gt;&lt;div class="duties"&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>duties.forEach(d =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const v = row[d.key];</p>
+<p class="p1"><span class="Apple-converted-space">          </span>if (v &amp;&amp; v !== '.') {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>dutiesHtml += '&lt;span class="mini-tag ' + d.cls + '" title="' + d.label + ': ' + v + '"&gt;' + d.label + '&lt;/span&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>dutiesHtml += '&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>cell.innerHTML = dutiesHtml;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>grid.appendChild(cell);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// ===== MODAL =====</p>
+<p class="p1"><span class="Apple-converted-space">    </span>function openDayModal(day) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const row = schedule.find(r =&gt; r.day === day);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (!row) return;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('modalTitle').textContent = 'เวรวันที่ ' + day + ' สิงหาคม 2026';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>let html = '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>duties.forEach(d =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const v = row[d.key];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (v &amp;&amp; v !== '.') {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>html += '&lt;div class="duty-row"&gt;&lt;span class="duty-tag ' + d.cls + '"&gt;' + d.label + '&lt;/span&gt;&lt;span class="dname"&gt;' + v + '&lt;/span&gt;&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (!html) html = '&lt;div class="empty-state"&gt;ไม่มีเวรในวันนี้&lt;/div&gt;';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('modalContent').innerHTML = html;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('dayModal').classList.add('show');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function closeModal(e) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (!e || e.target === document.getElementById('dayModal')) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('dayModal').classList.remove('show');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Init</p>
+<p class="p1"><span class="Apple-converted-space">    </span>renderCalendar();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
